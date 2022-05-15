@@ -1,0 +1,103 @@
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+
+  font-family: "Baloo Tamma 2", cursive;
+  line-height: 1.8;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.img {
+  margin: 2rem;
+}
+.form_div {
+  display: flex;
+  /* background: url(img/contact.svg); */
+  margin: 2rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: auto;
+  border: rgba(1, 183, 255, 0.671) 0.5rem solid;
+  /* margin: 5rem; */
+  padding: 2rem;
+}
+
+label {
+  height: 4rem;
+  font-size: 2rem;
+  color: rgb(31, 202, 245);
+}
+input {
+  height: 4rem;
+  font-size: 2rem;
+  background-color: rgba(228, 243, 243, 0.048);
+  color: rgb(75, 170, 233);
+  text-align: center;
+}
+textarea {
+  /* height: 4rem; */
+  font-size: 2rem;
+  background-color: rgba(234, 236, 236, 0.075);
+  color: rgb(52, 187, 240);
+  text-align: center;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(0, 183, 255);
+  font-size: 2rem;
+  opacity: 0.7; /* Firefox */
+}
+#submit {
+  height: 3rem;
+  margin: 1rem;
+  /* width: 20%; */
+  border-radius: 2rem;
+  cursor: pointer;
+}
+#submit:hover {
+  margin: 1rem;
+  background-color: rgb(105, 238, 255);
+}
+
+.image {
+  width: 80%;
+}
+.img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 610px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    grid-row-gap: 5rem;
+  }
+}
